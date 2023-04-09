@@ -4,7 +4,7 @@ import './NetflixIntro.scss';
 const NetflixIntro = () => {
     return (
         <div id="container">
-            <netflixintro letter="N">
+            <NetflixIntro letter="N">
                 <div className="helper-1">
                     <div className="effect-brush">
                         <span className="fur-31"></span>
@@ -175,7 +175,7 @@ const NetflixIntro = () => {
                         <span className="fur-1"></span>
                     </div>
                 </div>
-            </netflixintro>
+            </NetflixIntro>
         </div>
     )
 }

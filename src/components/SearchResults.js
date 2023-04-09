@@ -13,7 +13,7 @@ const SearchResults = () => {
     const [initialLoading, setInitialLoading] = useState(true);
     const [searchResults, setSearchResults] = useState([]);
     const query = params.query;
-    const searchUrl = `search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=${query}&page=1&include_adult=false`;
+    const searchUrl = `search/movie?api_key=${'02631e17761eb66cee2835acffdf33db'}&language=en-US&query=${query}&page=1&include_adult=false`;
     useEffect(() => {
         axios.get(searchUrl).then((req) => setSearchResults(req.data.results));
         setIsLoading(false);

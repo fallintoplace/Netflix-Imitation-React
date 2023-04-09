@@ -23,10 +23,10 @@ const ShowDetails = ({ mediaType }) => {
 
     const params = useParams();
     const movie_id = params[`${mediaType}`];
-    const detailMovieUrl = `${mediaType}/${movie_id}?api_key=${process.env.REACT_APP_API_KEY}`;
-    const castAndCrewUrl = `${mediaType}/${movie_id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
-    const externalIdUrl = `${mediaType}/${movie_id}/external_ids?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
-    const similarUrl = `${mediaType}/${movie_id}/similar?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
+    const detailMovieUrl = `${mediaType}/${movie_id}?api_key=${'02631e17761eb66cee2835acffdf33db'}`;
+    const castAndCrewUrl = `${mediaType}/${movie_id}/credits?api_key=${'02631e17761eb66cee2835acffdf33db'}&language=en-US`;
+    const externalIdUrl = `${mediaType}/${movie_id}/external_ids?api_key=${'02631e17761eb66cee2835acffdf33db'}&language=en-US`;
+    const similarUrl = `${mediaType}/${movie_id}/similar?api_key=${'02631e17761eb66cee2835acffdf33db'}&language=en-US`;
     const image_url = `https://image.tmdb.org/t/p/original/`;
 
     useEffect(() => {
